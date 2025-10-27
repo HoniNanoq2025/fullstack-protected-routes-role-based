@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import CssBaseline from "@mui/material/CssBaseline";
 import AdminPanel from "./components/Admin/AdminPanel";
 import EditorPanel from "./components/Editor/EditorPanel";
 import Login from "./components/Login/Login";

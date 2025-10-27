@@ -3,7 +3,7 @@ import LogOutBtn from "../LogOutBtn/LogOutBtn";
 
 export default function AdminPanel() {
   return (
-    <div>
+    <div className="container">
       <MenuAppBar />
       <h2>Admin Panel</h2>
       <p>

@@ -1,5 +1,6 @@
 import { useLocalStorage } from "@uidotdev/usehooks";
 import { useState, useEffect } from "react";
+import MenuAppBar from "../MenuAppBar/MenuAppBar";
 import LogOutBtn from "../LogOutBtn/LogOutBtn";
 
 export default function Profile() {
@@ -20,7 +21,8 @@ export default function Profile() {
   }, [token]);
 
   return (
-    <div>
+    <div className="container">
+      <MenuAppBar />
       <h2>Profile</h2>
       {profile && <pre>{JSON.stringify(profile, null, 2)}</pre>}
       <LogOutBtn />
