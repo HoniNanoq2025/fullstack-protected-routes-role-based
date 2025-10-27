@@ -1,0 +1,17 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
