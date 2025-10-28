@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -19,8 +19,8 @@ import { jwtDecode } from "jwt-decode";
 import { toast } from "react-toastify";
 
 export default function MenuAppBar() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [drawerOpen, setDrawerOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [token, setToken] = useLocalStorage("token", null);
   const navigate = useNavigate();
 
@@ -75,6 +75,8 @@ export default function MenuAppBar() {
 
     if (userRole === "admin") {
       items.push({ text: "Admin Panel", path: "/admin" });
+
+      items.push({ text: "Dashboard", path: "/dashboard" });
     }
 
     return items;
